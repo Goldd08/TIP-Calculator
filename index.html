@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+<link rel="stylesheet" href="./css/styles.css">
+  
+  <title>Frontend Mentor | Tip calculator app Challenge</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-splitter">
+            <img src="./assets/logo.svg" alt="logo">
+        </div>
+        <div class="card">
+            <div class="input">
+                <div class="bill-box">
+                    <div class="label-wrapper">
+                        <label for="input-bill">Bill</label>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <input type="text" 
+                        class="input-text"
+                        name="input-bill"
+                        id="input-bill"
+                        placeholder="0.0">
+                        <img src="./assets/icon-dollar.svg" alt="dollarsign">
+                    </div>
+
+                </div>
+
+                <div class="tip-box">
+                    <div class="label-wrapper">
+                        <label for="input-tip">Select Tip %</label>
+                    </div>
+                    <div class="button-wrapper">
+                        <div class="button tips">5%</div>
+                        <div class="button btn-active tips">10%</div>
+                        <div class="button tips">15%</div>
+                        <div class="button tips">25%</div>
+                        <div class="button tips">50%</div>
+
+                        <input type="text" 
+                        class="input-text"
+                        name="input-tip"
+                        id="custom-tip"
+                        placeholder="Custom">
+                        
+                    </div>
+                </div>
+
+                <div class="costumer-box">
+                    <div class="label-wrapper">
+                        <label for="input-costumer">Number of People</label>
+                        <div class="error-message">Cant be zero</div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <input type="text" 
+                        class="input-text"
+                        name="input-costumer"
+                        id="input-costumer"
+                        placeholder="1">
+                        <img src="./assets/icon-person.svg" alt="personsign">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="output">
+                <div class="line-wrapper">
+                    <div class="line-output">
+                        <div class="tittle-wrapper">
+                            <div class="tipamount">Tip Amount</div>
+                            <div class="total">/ person</div>
+                        </div>
+                        <div class="value">$4.27</div>
+                    </div>
+
+
+                    <div class="line-output">
+                        <div class="tittle-wrapper">
+                            <div class="tipamount">Total</div>
+                            <div class="total">/ person</div>
+                        </div>
+                        <div class="value">$32.79</div>
+                    </div>
+
+                </div>
+                <div class="button reset">Reset</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<script src="./js/main.js"></script>
+
+
+</body>
+</html>
